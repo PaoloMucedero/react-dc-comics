@@ -1,6 +1,10 @@
 function MainHeader () {
     return (
-        <h2> APP REACT secondo titolo </h2>
+        <div>
+            <h2>Cards</h2>
+
+
+        </div>
     )
 }
 export default MainHeader

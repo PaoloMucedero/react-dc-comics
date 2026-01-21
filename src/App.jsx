@@ -1,11 +1,15 @@
 import MainHeader from "./components/MainHeader"
+import comics from "./comics.js"
+import ComicsList from "./components/Card.jsx"
+
+console.log(comics);
 
 function App() {
   return (
-    <>
-      <h1>APP REACT</h1>
-      <MainHeader />    
-    </>
+
+    <ComicsList />
+
+
   )
 }
 
