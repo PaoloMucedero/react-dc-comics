@@ -1,0 +1,30 @@
+import comics from "../comics.js"
+import Card from "./Card.jsx";
+function ComicsList() {
+  return (
+    <div className="comics-container">
+      {comics.map(comic => // Parametro funzione - return implicito
+      ( // Valore che la funzione restituisce (le parentesi fanno riferimento al return implicito)
+        <Card title={comic.title} img={comic.thumb} />
+      ))}
+    </div>
+  );
+}
+
+export default ComicsList;
+
+// IN ALTERNATIVA - FUNZIONE GENERICA DA POTER RICHIAMARE
+/* const ComicList = () => {
+    return (
+      <div className="comics-container">
+      {comics.map(comic => (
+        <div className="comic-card" key={comic.id}>
+          <img src={comic.thumb} alt={comic.series} />
+          <p>{comic.series}</p>
+        </div>
+      ))}
+    </div>
+    );
+}
+export default ComicList;*/
+
